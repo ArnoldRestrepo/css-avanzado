@@ -1,0 +1,38 @@
+/* Split Latout */
+:root{
+    --blanco: #FFFFFF;
+    --azul : steelblue;
+}
+
+body{background: var(--azul);}
+img{
+    width: 100%;
+    height: auto;
+}
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+    color: var(--blanco);
+}
+.title{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.flex-container{
+    padding: 20px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.4;
+}
+.image{
+    display: block;
+    margin: auto;
+}
+
+@media  screen and (min-width: 64rem){
+    .split-block{display: flex;}
+    .split-block:last-child{flex-direction: row-reverse;}
+    .split-item{flex: 5 1 50%;}
+}
